@@ -37,17 +37,17 @@ public class _DIOR_ {
 
        try{
            driver.get(d1URL);
-           Thread.sleep(3000);
+           Thread.sleep(4000);
            ValidationMethods.ValidationTitle(driver,expected_d1Title);
            ValidationMethods.ValidationURL(driver,expected_d1URL);
 
            driver.navigate().to(d2URL);
-           Thread.sleep(3000);
+           Thread.sleep(4000);
            ValidationMethods.ValidationTitle(driver,expected_d2Title);
            ValidationMethods.ValidationURL(driver,expected_d2URL);
 
            driver.navigate().to(d3URL);
-           Thread.sleep(3000);
+           Thread.sleep(4000);
            ValidationMethods.ValidationTitle(driver,expected_d3Title);
            ValidationMethods.ValidationURL(driver,expected_d3URL);
 
@@ -60,6 +60,10 @@ public class _DIOR_ {
 
        }finally {
            driver.quit();
+
+
+
+
        }
 
 
