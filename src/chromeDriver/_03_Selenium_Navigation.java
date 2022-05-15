@@ -2,16 +2,15 @@ package chromeDriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.Driver;
 
 import java.util.concurrent.TimeUnit;
 
 public class _03_Selenium_Navigation {
+
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty(
-                "webdriver.chrome.driver", "/Users/dariasyvak/IdeaProjects/First_Selenium_Project/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+      WebDriver driver= Driver.getDriver();
 
         driver.get("https://www.techglobalschool.com/");//driver.navigate().to()
         Thread.sleep(1000);
@@ -34,7 +33,7 @@ public class _03_Selenium_Navigation {
         else System.out.println("The TITLE validation FAILED");
 
         Thread.sleep(5000);
-        driver.quit();
+        Driver.quitDriver();
 
 
     }
