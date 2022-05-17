@@ -6,12 +6,16 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
+    // 1. Private constructor
     private Driver(){
 
     }
 
+    // 2. Private driver
     private static WebDriver driver;
 
+
+    // 3. Create methods for getting and quiting driver
     public static WebDriver getDriver(){
         if(driver == null){
             System.setProperty( "webdriver.chrome.driver",
@@ -22,6 +26,7 @@ public class Driver {
         }
         return driver;
     }
+
 
     public static void quitDriver(){
         try{

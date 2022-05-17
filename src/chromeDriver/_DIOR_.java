@@ -38,18 +38,18 @@ public class _DIOR_ {
        try{
            driver.get(d1URL);
            Thread.sleep(4000);
-           ValidationMethods.ValidationTitle(driver,expected_d1Title);
-           ValidationMethods.ValidationURL(driver,expected_d1URL);
+           ValidationMethods.validationTitle(driver,expected_d1Title);
+           ValidationMethods.validationURL(driver,expected_d1URL);
 
            driver.navigate().to(d2URL);
            Thread.sleep(4000);
-           ValidationMethods.ValidationTitle(driver,expected_d2Title);
-           ValidationMethods.ValidationURL(driver,expected_d2URL);
+           ValidationMethods.validationTitle(driver,expected_d2Title);
+           ValidationMethods.validationURL(driver,expected_d2URL);
 
            driver.navigate().to(d3URL);
            Thread.sleep(4000);
-           ValidationMethods.ValidationTitle(driver,expected_d3Title);
-           ValidationMethods.ValidationURL(driver,expected_d3URL);
+           ValidationMethods.validationTitle(driver,expected_d3Title);
+           ValidationMethods.validationURL(driver,expected_d3URL);
 
            driver.navigate().back();
            driver.navigate().forward();
