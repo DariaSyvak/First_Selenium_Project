@@ -32,5 +32,11 @@ public class ValidationMethods {
     public static void validateIsDisplayed(WebElement webElement, String webElementName){
         if (webElement.isDisplayed()) System.out.println(webElementName + " is DISPLAYED");
         else  throw new RuntimeException((webElementName + " is NOT DISPLAYED"));
+
     }
+    public static void validateIsEnabled(WebElement webElement, String webElementName){
+        if (webElement.isEnabled()) System.out.println(webElementName + " is DISPLAYED");
+        else  throw new RuntimeException((webElementName + " is NOT DISPLAYED"));
+    }
+
 }
